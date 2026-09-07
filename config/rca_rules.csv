@@ -1,0 +1,8 @@
+rule_id,fault_type,manual_requirement,base_score,drop_bonus,timeout_bonus,failed_bonus,manual_bonus,max_score,cause,recommendation,reserved
+RCA_DROP_MANUAL,MESSAGE_DROP,YES,40,10,15,15,15,95,Controlled message drop caused progressive service degradation,Review counters and logs verify timing restore ECU and monitor recovery,-
+RCA_DROP_SCENARIO,MESSAGE_DROP,NO,40,10,15,15,0,95,Scenario-driven progressive CAN communication degradation,Review configured scenario counters and restore ECU,-
+RCA_DELAY_ANY,TRANSMISSION_DELAY,ANY,40,10,15,15,15,95,Configured transmission delay caused service degradation,Review interval and delay configuration then restore ECU,-
+RCA_TIMEOUT_ANY,COMMUNICATION_TIMEOUT,ANY,40,10,15,15,15,95,Heartbeat communication loss caused timeout degradation,Verify timeout settings restore ECU and monitor recovery,-
+RCA_INVALID_ANY,INVALID_PAYLOAD,ANY,40,10,15,15,15,95,Payload validation failure caused degraded service,Validate input CSV fields and payload mapping,-
+RCA_FAILED_ANY,TRANSMISSION_FAILURE,ANY,40,10,15,15,15,95,Repeated transmission failure degraded ECU service,Review transmission configuration restore ECU and monitor recovery,-
+RCA_OFFLINE_ANY,ECU_OFFLINE,ANY,40,10,15,15,15,95,ECU unavailability caused progressive service loss,Restore ECU verify availability and monitor recovery,-
