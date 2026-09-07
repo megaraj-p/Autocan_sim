@@ -1,0 +1,6 @@
+scenario,tick,ecu,fault_type,apply_to_bus,description
+ABS_DEGRADATION,3,ABS ECU,MESSAGE_DROP,1,Progressive ABS communication degradation
+ABS_DEGRADATION,10,ABS ECU,COMMUNICATION_TIMEOUT,1,ABS heartbeat timeout after repeated drops
+COMBINED_FAULT,3,ABS ECU,COMMUNICATION_TIMEOUT,0,Combined scenario ABS timeout
+COMBINED_FAULT,3,Engine ECU,TRANSMISSION_FAILURE,1,Combined scenario engine transmission failure
+COMBINED_FAULT,3,Dashboard ECU,MESSAGE_DROP,0,Dashboard missed updates caused display degradation
