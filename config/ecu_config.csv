@@ -1,0 +1,6 @@
+ecu_name,can_id,destination,priority,interval_ms,timeout_ms,data_file
+Engine ECU,256,Dashboard ECU,INFO,1000,3000,input_data/engine_data.csv
+ABS ECU,80,Dashboard ECU,HIGH,1000,3000,input_data/abs_data.csv
+Airbag ECU,1,Dashboard ECU,INFO,1000,3000,input_data/airbag_data.csv
+Driver Monitoring ECU,16,Dashboard ECU,HIGH,1000,3000,input_data/driver_monitoring_data.csv
+Dashboard ECU,768,Broadcast,INFO,1000,3000,NONE
